@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary Web App</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .word-info {
+            margin-top: 20px;
+        }
+
+        .word-info p {
+            margin-bottom: 10px;
+        }
+
+        .audio-player {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .audio-player audio {
+            width: 100%;
+        }
+
+        .status {
+            margin-top: 10px;
+        }
+
+        .status p {
+            margin-bottom: 5px;
+        }
+
+        .message {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dictionary Web App</h1>
+
+        
+        <form action="/find" method="post">
+            <input type="text" id="wordInput" name="word" placeholder="Enter a word">
+            <button id="searchBtn" type="submit">Search</button>
+        </form>
+        <div class="word-info">
+            <!-- <p id="word">Word:</p>
+            <p id="phonics">Phonetics:</p> -->
+            <div class="audio-player">
+                <!-- <audio id="audio" controls></audio> -->
+            </div>
+            <div class="status">
+                <!-- <p>Status:</p>
+                <p id="status"></p> -->
+            </div>
+            <!-- <p id="definition">Definition:</p> -->
+        </div>
+        <div class="message">
+            <p id="message">No Data Found!</p>
+        </div>
+
+        
+        
+    </div>
+
+    
+</body>
+</html>

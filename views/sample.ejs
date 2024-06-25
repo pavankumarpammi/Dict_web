@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary Web</title>
+    
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+</style>
+<body>
+    <div class="content">
+        <div class="main">
+            <h1>Dictionary Web  <em>Search a word</em></h1>
+           
+            <form action="/find" method="post">
+                <input type="text" name="word" placeholder="Enter a word">
+                <button type="submit" value="search">Search</button>
+            </form>
+
+        </div>
+        <h1><%=word %></h1>
+
+<h1><%=phonetic%></h1>
+
+<h1><%=partofspeech%></h1>
+
+<h1><%=definition %></h1>
+
+<h1><%=audio %></h1>
+
+<audio controls> 
+    <source src=<%=audio %>
+            type="audio/mp3"> 
+</audio> 
+
+        
+    </div>
+</body>
+</html>
+
